@@ -13,13 +13,16 @@ We are spending the first few weeks with a higher-level programming language bef
 > [!Important]
 > The repository is organized based on the different lessons in each week's lab
 > + Lab1: Java week one
-> + Lab2: Java week two
+> + Lab2: Java week two, part one
+> + Lab3: Java week two, part two
 
 ## Week Summaries
 1. Lab1
-   - This week focused upon the basics of programming in java with the scanner util. The lessons focused on teaching the basics of object orientated code, strongly typed variables, and command line input/output.
+   - This lab focused upon the basics of programming in java with the scanner util. The lessons focused on teaching the basics of object orientated code, strongly typed variables, and command line input/output.
 3. Lab2
-   - This week focused on the method structure of Java with how loops and conditionals work in the language.
+   - This lab focused on primative types and more indepth exploration of Java Scanner.
+3. Lab3
+   - This lab focused on the while and for loops of Java.
 
 > [!CAUTION]
 > I wrote all of the code myself without the help of AI. If any of it is stolen for any reason please reference this repository because I have put a lot of work into it. If the code is turned in as your own at Legend High School, I'm not responsible for your academic dishonesty and my commit logs may be used against you
