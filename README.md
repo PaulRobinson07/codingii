@@ -11,10 +11,11 @@ We are spending the first few weeks with a higher-level programming language bef
 
 ## Organization
 > [!Important]
-> The repository is organized based on the different lessons in each week's lab
+> The repository is organized based on the different lessons in each week's lab. Some weeks have more than one lab
 > + Lab1: Java week one
 > + Lab2: Java week two, part one
 > + Lab3: Java week two, part two
+> + Lab4: Java week three
 
 ## Week Summaries
 1. Lab1
@@ -23,6 +24,7 @@ We are spending the first few weeks with a higher-level programming language bef
    - This lab focused on primative types and more indepth exploration of Java Scanner.
 3. Lab3
    - This lab focused on the while and for loops of Java.
-
+3. Lab4
+   - This lab focused on methods
 > [!CAUTION]
 > I wrote all of the code myself without the help of AI. If any of it is stolen for any reason please reference this repository because I have put a lot of work into it. If the code is turned in as your own at Legend High School, I'm not responsible for your academic dishonesty and my commit logs may be used against you
