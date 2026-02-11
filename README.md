@@ -17,6 +17,7 @@ We are spending the first few weeks with a higher-level programming language bef
 > + Lab3: Java week two, part two
 > + Lab4: Java week three, part one
 > + Lab5: Java week three, part two
+> + Lab6: Java week four, part one 
 
 ## Week Summaries
 1. Lab1
@@ -29,5 +30,7 @@ We are spending the first few weeks with a higher-level programming language bef
    - This lab focused on methods
 5. Lab5
    - This lab focused on classes, their methods, constructors, and referencing them.
+5. Lab6
+   - This lab focused on lists
 > [!CAUTION]
 > I wrote all of the code myself without the help of AI. If any of it is stolen for any reason please reference this repository because I have put a lot of work into it. If the code is turned in as your own at Legend High School, I'm not responsible for your academic dishonesty and my commit logs may be used against you
