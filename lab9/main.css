@@ -1,0 +1,28 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #1d2021;
+	color: #fbf1c7;
+	font-family: FreeMono, monospace;
+}
+.skill_header {
+	font-weight: 900;
+}
+li {
+	background-color: #32302f;
+	border-radius:10px;
+	max-width: 80%;
+	margin-left:10%;
+}
+.skill_description {
+	font-weight:500;
+	font-size: 20px;
+}
+.section_lead {
+	font-size: 35px;
+	text-align: center;
+	border: 10px solid #fbf1c7;
+	border-radius:10px;
+	max-width:80%;
+	margin-left:10%;
+}

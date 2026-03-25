@@ -8,8 +8,8 @@ public class Shopkeeper {
 			return;
 		}
 		for (int i=0;i<inventory.size()-1;i++) {
-			if (inventory.get(i).name == item.name) {
-				inventory.get(i).count = inventory.get(i).count+item.count;
+			if (inventory.get(i).name.equals(item.name)) {
+				inventory.get(i).count += item.count;
 				return;
 			}
 		}

@@ -1,0 +1,22 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #1d2021;
+	color: #fbf1c7;
+	font-family: FreeMono, monospace;
+}
+div {
+	height: 300px;
+	width: 300px;
+	background-color:red;
+	animation: infinite 5s ease-in-out animation_1;
+	border-radius:50%;
+}
+
+@keyframes animation_1 {
+	0%{margin-left:0px;margin-top:0px; background-color:red;}
+	20%{margin-left:25%;margin-top:0px; background-color:yellow;}
+	40%{margin-left:25%;margin-top:25%; background-color:green;}
+	60%{margin-left:0px;margin-top:25%; background-color:blue;}
+	100%{margin-left:0px;margin-top:0px; background-color:purple;}
+}

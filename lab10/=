@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Unit 3</title>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<h1 class="head">CSS images and alignment</h1>
+		<div class="text">
+			<h1>This is text with alternate alignment</h1>
+		</div>
+		<div class="images">
+			<h1>This is my first image:</h1>
+			<img class="normal" src="images/one.png">
+			<h1>This is my second image which has different alignment</h1>
+			<img class="alternate" src="images/two.png">
+		</div>
+	</body>
+
+</html>

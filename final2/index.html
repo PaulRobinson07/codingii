@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LHS Schedule Tracker</title>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<p id="current_period"></p>
+		<div class="section_times">
+			<div class="time_sub">
+				<p>Time until next period</p>
+				<p id="time_left"></p>
+			</div>
+			<div class="time_sub">
+				<p>Time until end of day</p>
+				<p id="time_left_day"></p>
+			</div>
+		</div>
+		<div class="section_progress">
+			<p class="progress_head">Period Progress Bar</p>
+			<div class="bar_outline">
+				<div id="time_left_bar"></div>
+			</div>
+		</div>
+		<canvas id="animation"></canvas>
+		<script src="animation.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>

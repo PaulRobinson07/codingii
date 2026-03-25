@@ -1,0 +1,17 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #1d2021;
+	color: #fbf1c7;
+	font-family: FreeMono, monospace;
+}
+img {
+	height:30%;
+	width:30%;
+}
+.alternate {
+	float:right;
+}
+.text {
+text-align:center;
+}

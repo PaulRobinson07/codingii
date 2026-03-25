@@ -42,4 +42,18 @@ public class Inventory {
 			}
 		}
 	}
+	public void sell_item(String item_name) {
+		for (int i=0; i<inventory_size; i++) {
+			if (item_name.equals(inventory_slots[i].name)) {
+				Item item = new Item(inventory_slots[i].name,inventory_slots[i].price,inventory_slots[i].count);
+				main.shopKeeper.add_item(item);
+				inventory_slots[i].name="";
+				inventory_slots[i].price=0.0;
+				inventory_slots[i].count=0;
+				return;
+			}
+		}
+		System.out.println("You do not seem to have that item");
+		System.out.println("Enter 0 for the list of commands and 3 to see your inventory");
+	}
 }

@@ -1,0 +1,57 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #1d2021;
+	color: #fbf1c7;
+	font-family: FreeMono, monospace;
+}
+
+.section_times {
+	display:flex;
+	justify-content: space-around;
+	font-weight:500;
+}
+.time_sub {
+	width:40%;
+	height:100px;
+	text-align:center;
+}
+#current_period {
+	font-weight: 900;
+	font-size:50px;
+	margin-bottom:0px;
+	margin-top:0px;
+	text-align: center;
+}
+.section_progress {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.progress_head {
+	font-weight:900;
+	font-size:30px;
+}
+.bar_outline {
+	background-color:cornflowerblue;
+	width:75%;
+	height:50px;
+	border-radius:50px;
+}
+#time_left_bar {
+	width:80%;
+	height:100%;
+	background-color: orange;
+	border-radius:50px
+}
+
+#animation {
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0px;
+	right:0px;
+	margin:0px;
+	padding:0;
+}

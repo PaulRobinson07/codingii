@@ -4,12 +4,26 @@ public class User_events {
 	String a = "Your Inventory";
 	String b = "Shopkeeper Inventory";
 	public void add_item() {
+		main.events.keyboard.nextLine();
+		System.out.println("What's the name of the Item you'd like to add to your inventory?");
+		String name = main.events.keyboard.nextLine();
+
+		System.out.println("What's the price of the Item you'd like to add to your inventory?");
+		double price = main.events.keyboard.nextDouble();
+
+		System.out.println("What's the count of the Item you'd like to add to your inventory?");
+		int count = main.events.keyboard.nextInt();
+
+		Item item = new Item(name, price, count);
 		
+		main.inventory.add_item(item);
 
 	}
 	public void sell_item() {
-
-
+		main.events.keyboard.nextLine();
+		System.out.println("Say the name of item you'd like to sell");
+		String item_name = main.events.keyboard.nextLine();
+		main.inventory.sell_item(item_name);
 	}
 	//shows all the items in the user's inventory
 	public void show_user_items() {

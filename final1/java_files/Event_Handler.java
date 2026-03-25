@@ -16,9 +16,11 @@ public class Event_Handler {
 			break;
 			case 1:
 				//adds an item to the user's inventory
+				main.handler.add_item();
 			break;
 			case 2:
 				//sells an item to the shopkeeper
+				main.handler.sell_item();
 			break;
 			case 3:
 				//displays the user's inventory
