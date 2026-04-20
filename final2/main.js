@@ -11,7 +11,7 @@ periods = [[0,0,0,"Before School"],
 	[24,59,59,"After School"]];
 
 //time school ends
-end_of_day = [14,44,60];
+end_of_day = [14,44,59];
 
 class PeriodTracker {
 	//runs on creation of class
@@ -26,7 +26,6 @@ class PeriodTracker {
 		this.timeHrs = 0;
 		this.timeMin = 0;
 		this.timeSec = 0;
-
 		//variables that hold the time left in the period
 		this.hrsLeft = 0;
 		this.minLeft = 0;
