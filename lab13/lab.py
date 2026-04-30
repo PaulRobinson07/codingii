@@ -1,52 +1,35 @@
 import pandas as pd
-
+import matplotlib.pyplot as plt
+import numpy as np
 #gets the data from the csv file
-df = pd.read_csv('dirty_sales-1.csv')
+df = pd.read_csv('startup_traffic.csv')
 
-df= df.sort_values(by='Date')
+df['Visitors'] = df ['Visitors'].interpolate()
 
-#gets rid of missing or unformatted in the price column
-df['Price'] = df['Price'].str.replace('$', '', regex=False).str.replace(',', '', regex=False).astype(float)
-df['Price'] = df['Price'].fillna(df['Price'].mean())
+# 1. Set Date as the index (required for resampling)
+df_time = df.set_index('Date')
+# Change 'M' to 'ME'
+monthly_totals = df_time['Visitors'].resample('ME').sum()
 
+# Plotting
+monthly_totals.plot(kind='bar', color='darkblue')
+plt.show()
+# 2. Resample to Monthly ('M') and sum the Visitors
+monthly_totals = df_time['Visitors'].resample('M').sum()
 
-#removes excess rows
-df_clean = df.drop_duplicates()
+print("Monthly Visitor Totals:")
+print(monthly_totals)
 
-df_clean['Total Cost'] = df_clean['Price'] * df_clean['Quantity']
+# 3. Plot the Monthly Bar Chart for the Board
+plt.figure(figsize=(10, 6))
+monthly_totals.plot(kind='bar', color='darkblue', edgecolor='black')
 
-#Calculate total revenue for each Category
-category_performance = df_clean.groupby('Category')['Total Cost'].sum()
+# Clean up the X-axis labels to show Month-Year
+plt.title('Total Monthly Visitors (Board of Directors View)', fontsize=14)
+plt.ylabel('Total Visitors')
+plt.xlabel('Month')
+plt.xticks(rotation=45)
+plt.grid(axis='y', linestyle='--', alpha=0.7)
 
-#Identify the top performer
-top_performer = category_performance.idxmax()
-top_revenue = category_performance.max()
-
-#Identify the struggling category
-struggling_category = category_performance.idxmin()
-bottom_revenue = category_performance.min()
-
-#Print the category info
-print(category_performance)
-print(f"Top Performer: {top_performer} (${top_revenue})")
-print(f"Struggling Category: {struggling_category} (${bottom_revenue})")
-
-
-#Calculate total revenue for each Customer
-customers= df_clean.groupby('CustomerName')['Total Cost'].sum()
-
-#Identify the top customer 
-top_purchaser= customers.idxmax()
-top_buy= customers.max()
-
-
-print(f"Top Customer: {top_purchaser} (${top_buy})")
-
-total_revenue = df_clean['Total Cost'].sum()
-
-print('The total revenue of the company is: $' , total_revenue)
-
-#prints out some of the data to check
-print(df_clean.head(40))
-
-df_clean.info();
+plt.tight_layout()
+plt.show()
